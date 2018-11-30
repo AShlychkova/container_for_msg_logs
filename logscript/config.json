@@ -1,0 +1,13 @@
+{
+	"senderEmail":"tt9090969@gmail.com",
+	"senderPassword":"nopasswd1029",
+	"receiverEmail":"as.darkson@mail.ru",
+	"mailServerAddsress": "smtp.gmail.com",
+	"mailServerPort":"587" ,
+	"mailSubject":"log statistics",
+	"mailText": "",
+	"zipFile": "output.zip",
+	"zipFilePDF": "output_pdf.zip"
+}
+
+
