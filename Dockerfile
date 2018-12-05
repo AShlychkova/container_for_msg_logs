@@ -2,7 +2,7 @@ FROM masterandrey/docker-python-base
 
 COPY logscript /logscript
 
-RUN 
+#RUN 
 
 RUN apk --no-cache add musl-dev gfortran g++ jpeg-dev  \
     && pip install numpy\
