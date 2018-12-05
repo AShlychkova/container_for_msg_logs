@@ -1,9 +1,1 @@
-Alpine linux based [Docker Hub container](https://hub.docker.com/r/masterandrey/docker-matplotlib/) 
-with matplotlib, numpy and Python3.
-
-Also I installed 'Comic Sans' font for xkcd style in matplotlib.
-
-Matplotlib with dependencies builds about 20 minutes on Docker Hub so this repository
-saves your time.
-
-Example how to use it see in [Calendar for IoT](https://github.com/masterandrey/docker-iot-calendar).
+docker container run -it -v pwd/<streamhsm01>/:/streamhsm01 -v 'pwd'/<out>/:/out ashly/container_for_msg_logs:latest /bin/bash -c "cd logscript; python3 unpack.py ../<streamhsm01>; ./archive.sh; cp output_pdf.zip /out"
