@@ -97,15 +97,16 @@ plt.ylabel('message (1000)')
 ax.set_xticks(numpy.arange(0, 24, 1))
 ax.set_yticks(numpy.arange(0, 550, 50))
 ax.grid(True)
+step = 0.024/len(files)
 for f in files:
-    i += 0.0004
+    i += step
     if f[0]!='.':
         frame = pd.read_csv('out_csv/'+f, header=0, sep=',')
         n, bins, patches = plt.hist(frame['time'], range=(0, 24), bins=24,
                                     color='red',  alpha=i)
 i = 0.025
 for f in files:
-    i = i - 0.0004
+    i = i - step
     if f[0]!='.':
         frame = pd.read_csv('out_csv/'+f, header=0, sep=',')
         n, bins, patches = plt.hist(frame['time'], range=(0, 24), bins=24,
